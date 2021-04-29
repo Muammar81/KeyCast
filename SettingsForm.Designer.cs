@@ -49,6 +49,7 @@
             this.locationLabel = new System.Windows.Forms.Label();
             this.locationTip = new System.Windows.Forms.ToolTip(this.components);
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.RunStartup_CheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.fadeDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.historySteps)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -59,7 +60,7 @@
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(123, 302);
+            this.okButton.Location = new System.Drawing.Point(123, 359);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 0;
@@ -252,7 +253,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.SteelBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(9, 316);
+            this.linkLabel1.Location = new System.Drawing.Point(9, 373);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(35, 13);
             this.linkLabel1.TabIndex = 10;
@@ -260,11 +261,23 @@
             this.linkLabel1.Text = "About";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // RunStartup_CheckBox
+            // 
+            this.RunStartup_CheckBox.AutoSize = true;
+            this.RunStartup_CheckBox.Location = new System.Drawing.Point(12, 312);
+            this.RunStartup_CheckBox.Name = "RunStartup_CheckBox";
+            this.RunStartup_CheckBox.Size = new System.Drawing.Size(95, 17);
+            this.RunStartup_CheckBox.TabIndex = 11;
+            this.RunStartup_CheckBox.Text = "Run at Startup";
+            this.RunStartup_CheckBox.UseVisualStyleBackColor = true;
+            this.RunStartup_CheckBox.CheckedChanged += new System.EventHandler(this.RunStartup_CheckBox_CheckedChanged);
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(214, 338);
+            this.ClientSize = new System.Drawing.Size(214, 394);
+            this.Controls.Add(this.RunStartup_CheckBox);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -311,5 +324,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label OpacityLabel;
         private System.Windows.Forms.TrackBar OpacityBar;
+        private System.Windows.Forms.CheckBox RunStartup_CheckBox;
     }
 }

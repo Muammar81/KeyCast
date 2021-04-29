@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -126,5 +127,20 @@ namespace KeyCast
             locationTip.SetToolTip(locationLabel, "To set location, Hover on the Keys Text & Drag it");
         }
 
+        private void RunStartup_CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            RunAtStartup(((CheckBox)sender).Checked);
+        }
+
+        private static void RunAtStartup(bool status)
+        {
+            RegistryKey reg = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+            if (status)
+
+                reg.SetValue(Application.ProductName, Application.ExecutablePath);
+            else
+                reg.DeleteValue(Application.ProductName);
+
+        }
     }
 }
