@@ -38,7 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -53,10 +53,10 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>DualMonitor.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>KeyCast.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>56ECB13A1D787EC0F5596E1F52E6731A4E193B83</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>2430889BB3972F5E6F2E47E769FA0FF3106170F5</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>keyboard.ico</ApplicationIcon>
@@ -119,6 +119,7 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="DualMonitor.snk" />
+    <None Include="KeyCast.snk" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

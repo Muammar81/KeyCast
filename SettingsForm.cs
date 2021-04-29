@@ -46,6 +46,7 @@ namespace KeyCast
             int y = Properties.Settings.Default.WindowLocation.Y;
             locationLabel.Text = $"StartUp Location: {x},{y}";
 
+            RunStartup_CheckBox.Checked = Properties.Settings.Default.StartUp;
 
         }
 
@@ -71,6 +72,8 @@ namespace KeyCast
             Properties.Settings.Default.Save();
 
             On_SettingsApplied?.Invoke();
+
+            Properties.Settings.Default.StartUp = RunStartup_CheckBox.Checked;
         }
 
 
