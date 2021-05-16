@@ -107,20 +107,6 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_5C553A494EBA421EB9210FDBA34657C0"
-            {
-            "Name" = "8:Primary output from KeyCast (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_6D5B3A4079294787978189A362480DC7"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_4CDBC0D3_76B9_4FE3_BA9D_CE6B8F89F36E"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
         }
         "DefaultFeature"
         {
@@ -148,7 +134,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:KeyCast, Version=1.1.0.0, Culture=neutral, PublicKeyToken=af661167c3eb5905, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:KeyCast, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af661167c3eb5905, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_8D17CE6D8F844ED99AC71AEDF2172872"
@@ -252,11 +238,11 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Key Cast"
         "ProductCode" = "8:{80C49E52-C04D-47A4-BFAB-A30096DC3C52}"
-        "PackageCode" = "8:{2D6A4487-3883-42EA-B706-45E93EF50002}"
+        "PackageCode" = "8:{62BF9A37-16A7-4B6A-8CD9-7D4884B11129}"
         "UpgradeCode" = "8:{55FA5B20-9175-410A-B8B7-750E020ACAB9}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
@@ -269,7 +255,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Cast Keys on Screen for Tutorials"
         "ARPURLINFOABOUT" = "8:https://panettonegames.com/"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_A9421491736A4801B3E6672635906D84"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
