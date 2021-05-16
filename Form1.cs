@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace KeyCast
@@ -11,6 +12,7 @@ namespace KeyCast
     public partial class Form1 : Form
     {
         private KeyHook _listener;
+        private DateTime lastTriggered;
         private string currentKey;
         private string lastKey;
         private bool closedFromNotify;
@@ -23,7 +25,7 @@ namespace KeyCast
         private StringBuilder sb;
         private string ver;
         private SettingsForm s;
-
+        private Double delayBetweenStrokes = 0.1f;
 
         //draw String
         [DllImport("User32.dll")] public static extern IntPtr GetDC(IntPtr hwnd);
@@ -88,6 +90,11 @@ namespace KeyCast
 
         void _listener_OnKeyPressed(object sender, KeyPressedArgs e)
         {
+
+
+
+
+
             currentKey = e.KeyPressed.GetChar();
             if (Lines.Count > MaxHistoryLines)
                 Lines.RemoveAt(0);
@@ -128,12 +135,19 @@ namespace KeyCast
 
                 if (currentLine == lastLine)
                 {
+
+
+
                     //if(IsSpecial(lastLine))
                     //if (IsSpecial(Lines[Lines.Count - 2]))
                     //   CastLines[CastLines.Count - 1] = $"{Lines[Lines.Count - 2]} + {currentLine} x {++XCount}";
                     //else
                     if (CastLines.Count > 0)
-                        CastLines[CastLines.Count - 1] = $"{currentLine} x {++XCount}";
+                    {
+                        if ((DateTime.Now >= lastTriggered.AddSeconds(delayBetweenStrokes)))
+                            CastLines[CastLines.Count - 1] = $"{currentLine} x {++XCount}";
+                        lastTriggered = DateTime.Now;
+                    }
                 }
                 else
                 {
