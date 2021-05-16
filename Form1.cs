@@ -51,6 +51,7 @@ namespace KeyCast
             ShowBalloon();
         }
 
+
         private void ShowBalloon()
         {
 
@@ -86,15 +87,11 @@ namespace KeyCast
         {
             _listener.UnHookKeyboard();
             s.On_SettingsApplied -= ApplySettings;
+            notifyIcon1.Dispose();
         }
 
         void _listener_OnKeyPressed(object sender, KeyPressedArgs e)
         {
-
-
-
-
-
             currentKey = e.KeyPressed.GetChar();
             if (Lines.Count > MaxHistoryLines)
                 Lines.RemoveAt(0);

@@ -59,7 +59,7 @@
     <ManifestCertificateThumbprint>2430889BB3972F5E6F2E47E769FA0FF3106170F5</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>keyboard.ico</ApplicationIcon>
+    <ApplicationIcon>zbutton.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -141,7 +141,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="keyboard.ico" />
+    <Content Include="zbutton.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

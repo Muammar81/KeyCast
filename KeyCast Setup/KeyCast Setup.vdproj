@@ -21,7 +21,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EDE0446F726949F89F9FC9E90094FABC"
+        "MsmKey" = "8:_8D17CE6D8F844ED99AC71AEDF2172872"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A9421491736A4801B3E6672635906D84"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -29,6 +35,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_6D5B3A4079294787978189A362480DC7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8D17CE6D8F844ED99AC71AEDF2172872"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -49,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -65,6 +85,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -108,10 +144,41 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EDE0446F726949F89F9FC9E90094FABC"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8D17CE6D8F844ED99AC71AEDF2172872"
             {
-            "SourcePath" = "8:..\\keyboard.ico"
-            "TargetName" = "8:keyboard.ico"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:KeyCast, Version=1.1.0.0, Culture=neutral, PublicKeyToken=af661167c3eb5905, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_8D17CE6D8F844ED99AC71AEDF2172872"
+                    {
+                    "Name" = "8:KeyCast.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\bin\\Release\\KeyCast.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_4662C47FCD9A481488ED871B3A74C41D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A9421491736A4801B3E6672635906D84"
+            {
+            "SourcePath" = "8:..\\zbutton.ico"
+            "TargetName" = "8:zbutton.ico"
             "Tag" = "8:"
             "Folder" = "8:_4662C47FCD9A481488ED871B3A74C41D"
             "Condition" = "8:"
@@ -185,7 +252,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Key Cast"
         "ProductCode" = "8:{80C49E52-C04D-47A4-BFAB-A30096DC3C52}"
-        "PackageCode" = "8:{AB045691-4544-4F35-BAB2-3411B513D9F0}"
+        "PackageCode" = "8:{2D6A4487-3883-42EA-B706-45E93EF50002}"
         "UpgradeCode" = "8:{55FA5B20-9175-410A-B8B7-750E020ACAB9}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -202,7 +269,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Cast Keys on Screen for Tutorials"
         "ARPURLINFOABOUT" = "8:https://panettonegames.com/"
-        "ARPPRODUCTICON" = "8:_EDE0446F726949F89F9FC9E90094FABC"
+        "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -316,7 +383,7 @@
             "Target" = "8:_6D5B3A4079294787978189A362480DC7"
             "Folder" = "8:_484FD4F6D8674D1AB3931EA645A8475C"
             "WorkingFolder" = "8:_4662C47FCD9A481488ED871B3A74C41D"
-            "Icon" = "8:_EDE0446F726949F89F9FC9E90094FABC"
+            "Icon" = "8:_A9421491736A4801B3E6672635906D84"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E58BA706A24340C994ECAC84B1B5DA9E"
@@ -330,7 +397,7 @@
             "Target" = "8:_6D5B3A4079294787978189A362480DC7"
             "Folder" = "8:_0B42596657B547C0B4F91072C7164A1F"
             "WorkingFolder" = "8:_4662C47FCD9A481488ED871B3A74C41D"
-            "Icon" = "8:_EDE0446F726949F89F9FC9E90094FABC"
+            "Icon" = "8:_A9421491736A4801B3E6672635906D84"
             "Feature" = "8:"
             }
         }
